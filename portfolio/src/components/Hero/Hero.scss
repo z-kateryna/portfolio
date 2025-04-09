@@ -1,0 +1,47 @@
+@use "../../assets/styles/partials/typography";
+@use "../../assets/styles/partials/mixins" as *;
+@use "../../assets/styles/partials/globals" as *;
+@use "../../assets/styles/partials/variables" as *;
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  &__first-line {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 6rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__header {
+    font-size: 4rem;
+    font-family: 'DMSans';
+    line-height: 1.2;
+    font-weight: 200;
+  }
+
+  &__header--bold {
+    font-weight: 600;
+  }
+
+  &__header--italic {
+    font-style: italic;
+  }
+
+  &__copy {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  &__logo-wrapper {
+    display: flex; 
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 12rem;
+  }
+
+}
