@@ -1,0 +1,46 @@
+@use '../../assets/styles/partials/typography';
+@use "../../assets/styles/partials/mixins" as *;
+@use "../../assets/styles/partials/globals" as *;
+@use "../../assets/styles/partials/variables" as *;
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    &__logo {
+        font-size: 1.25rem;
+        font-weight: 400;
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    &__menu-container {
+        display: flex;
+        gap: 3rem;
+        width: 33%;
+    }
+
+    &__menu--item {
+        display: flex;
+        gap: 0.25rem;
+    }
+
+    &__icons-container {
+        display: flex;
+        gap: 1rem;
+        width: 33%;
+        justify-content: flex-end;
+    }
+
+    &__icon {
+        height: 1.375rem;
+    }
+
+    &__line {
+        height: 1px;
+        color: #1C2230;
+    }
+}
