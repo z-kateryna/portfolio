@@ -15,6 +15,7 @@
   &__nowsta,
   &__cob {
     width: 590px;
+    margin-bottom: 4rem;
   }
 
   &__pyrukynd--img,
@@ -36,12 +37,12 @@
 }
 
 &__tag {
-    border: 1px solid $copy;
+    border: 1px solid #606367;
     width: fit-content;
     padding: 0.25rem 0.5rem;
     border-radius: 20px;
-    color: $copy;
-    background-color: $grey-bkgrd;
+    color: #606367;
+    // background-color: $grey-bkgrd;
     font-size: 1rem;
 }
 
