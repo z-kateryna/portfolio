@@ -8,12 +8,88 @@
     flex-direction: column;
     justify-content: flex-start;
 
+    &__first-line {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 4rem;
+      padding-bottom: 0.5rem;
+    }
+
+    &__header {
+      font-size: 2rem;
+      font-family: 'DMSans';
+      line-height: 1.2;
+      font-weight: 200;
+      text-align: left;
+    }
+
+    &__picture {
+      height: 2.25rem;
+    }
+
+    &__header--bold {
+      font-weight: 600;
+    }
+  
+    &__header--italic {
+      font-style: italic;
+    }
+
+    &__logo-wrapper {
+      display: flex; 
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 4rem;
+      flex-wrap: wrap;
+    }
+
+    &__brand-logo {
+      transform: scale(0.8);
+    }
+
+  @include tablet {
+    &__header {
+      font-size: 2.5rem;
+      font-family: 'DMSans';
+      line-height: 1.2;
+      font-weight: 200;
+      text-align: left;
+    }
+
+    &__picture {
+      height: 2.5rem;
+    }
+
+    &__logo-wrapper {
+      display: flex; 
+      gap: 1.25rem;
+      justify-content: center;
+      margin-top: 6rem;
+      flex-wrap: wrap;
+    }
+
+    &__brand-logo {
+      transform: scale(0.9);
+      margin-top: -1rem;
+    }
+  }
+
+  @include desktop {
+
   &__first-line {
     display: flex;
     align-items: center;
     gap: 1.5rem;
     margin-top: 6rem;
     padding-bottom: 0.5rem;
+  }
+
+  &__picture {
+    height: 4rem;
+    &:hover {
+      animation: wiggle 0.5s ease-in-out;
+    }
   }
 
   &__header {
@@ -31,17 +107,24 @@
     font-style: italic;
   }
 
-  &__copy {
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
   &__logo-wrapper {
     display: flex; 
-    gap: 3.75rem;
+    gap: 3.5rem;
     justify-content: center;
     margin-top: 12rem;
+    flex-wrap: wrap;
   }
 
+  &__brand-logo {
+    transform: scale(1);
+  }
 }
+
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
+}
+

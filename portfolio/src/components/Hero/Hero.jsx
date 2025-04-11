@@ -20,13 +20,13 @@ export default function Hero() {
           <p className="hero__header"><span className="hero__header--bold">UX/UI Designer</span> bridging Dev and Design to create <span className="hero__header--italic">thoughtful, beautiful, and impactful solutions</span>.</p>
         </div>
         <div className="hero__logo-wrapper">
-            <img src={AbbvieLogo}/>
-            <img src={AgiosLogo}/>
-            <img src={COB}/>
-            <img src={GSK}/>
-            <img src={Novartis}/>
-            <img src={Sanofi}/>
-            <img src={Nowsta}/>
+            <img className="hero__brand-logo" src={AbbvieLogo}/>
+            <img className="hero__brand-logo" src={AgiosLogo}/>
+            <img className="hero__brand-logo" src={COB}/>
+            <img className="hero__brand-logo" src={GSK}/>
+            <img className="hero__brand-logo" src={Novartis}/>
+            <img className="hero__brand-logo" src={Sanofi}/>
+            <img className="hero__brand-logo" src={Nowsta}/>
         </div>
       </div>
     </>
